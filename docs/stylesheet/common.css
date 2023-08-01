@@ -24,7 +24,7 @@ img {
 /* header */
 .header-wrapper {
   display: flex;
-  padding: 0 20px;
+  padding-left: 20px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
@@ -37,6 +37,45 @@ img {
 .logo-image {
   width: 100%;
   height: auto;
+}
+
+.hamburger {
+  height: 60px;
+  width: 60px;
+  background-color: blueviolet;
+  position: relative;
+}
+
+/* まんなかの棒 */
+.hamburger__line {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  top: calc((60px - 2px) / 2);
+  left: calc((60px - 30px) / 2);
+}
+/* 上の棒 */
+.hamburger__line::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  top: -10px;
+}
+/* 下の棒 */
+.hamburger__line::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  top: 10px;
+}
+
+.global-nav {
+  display: none;
 }
 
 .global-nav__list {
