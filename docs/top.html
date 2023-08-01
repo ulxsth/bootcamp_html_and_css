@@ -21,13 +21,15 @@
           <img class="logo-image" src="images/logo.svg">
         </a>
       </div>
-
-      <div class="header-links">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Top</a></li>
-          <li class="nav-item"><a href="article.html">Articles</a></li>
-          <li class="nav-item"><a href="#">Members</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
+      <!-- <div class="hamburger">
+        <span class="hamburger__line"></span>
+      </div> -->
+      <div class="global-nav">
+        <ul class="global-nav__list">
+          <li class="global-nav__item global-nav__item--current"><a href="#">Top</a></li>
+          <li class="global-nav__item"><a href="article.html">Articles</a></li>
+          <li class="global-nav__item"><a href="#">Members</a></li>
+          <li class="global-nav__item"><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -35,79 +37,132 @@
 
   <main>
     <div class="main-wrapper">
-      <div class="heading-container">
-        <h1>progate path</h1>
-        <h2>Developers Blog</h2>
-      </div>
+      <h1 class="page-header">
+        <div class="page-header__inner">
+          <img class="page-header__title" src="images/progate_path.svg">
+          <h2 class="page-header__sub-title">Developers Blog</h2>
+        </div>
+      </h1>
 
-      <h1>Popular Articles</h1>
-      <div class="article-components">
-        <img src="images/article_thumbnail.png">
-        <h2>Let's master CSS flexboxes!</h2>
-        <p class="description">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
-          to show you a more advanced use of flexboxes.</p>
-        <p class="author">Taro Tanaka</p>
-        <p class="posted_date">2023/03/20</p>
-      </div>
-      <div class="article-components">
-        <img src="images/article_thumbnail.png">
-        <h2>Let's master CSS flexboxes!</h2>
-        <p class="description">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
-          to show
-          you a more advanced use of flexboxes.</p>
-        <p class="author">Taro Tanaka</p>
-        <p class="posted_date">2023/03/20</p>
-      </div>
-      <div class="article-components">
-        <img src="images/article_thumbnail.png">
-        <h2>Let's master CSS flexboxes!</h2>
-        <p class="description">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
-          to show
-          you a more advanced use of flexboxes.</p>
-        <p class="author">Taro Tanaka</p>
-        <p class="posted_date">2023/03/20</p>
-      </div>
+      <div class="category-list">
+        <section class="category">
+          <h2 class="category__title">Popular Articles</h2>
+          <ul class="category__body card-list">
+            <li class="card-list__item">
+              <a class="card" href="./article.html">
+                <div class="card__image">
+                  <img src="images/article_thumbnail.png">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Let's master CSS flexboxes!</h3>
+                  <p class="card__text">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
+                    to show you a more advanced use of flexboxes.</p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">Taro Tanaka</span>
+                    <span class="card__meta-item">2023/03/20</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card" href="./article.html">
+                <div class="card__image">
+                  <img src="images/article_thumbnail.png">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Let's master CSS flexboxes!</h3>
+                  <p class="card__text">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
+                    to show you a more advanced use of flexboxes.</p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">Taro Tanaka</span>
+                    <span class="card__meta-item">2023/03/20</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card" href="./article.html">
+                <div class="card__image">
+                  <img src="images/article_thumbnail.png">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Let's master CSS flexboxes!</h3>
+                  <p class="card__text">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
+                    to show you a more advanced use of flexboxes.</p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">Taro Tanaka</span>
+                    <span class="card__meta-item">2023/03/20</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      <h1>Latest Articles</h1>
-      <div class="article-components">
-        <img src="images/article_thumbnail.png">
-        <h2>Let's master CSS flexboxes!</h2>
-        <p class="description">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
-          to show
-          you a more advanced use of flexboxes.</p>
-        <p class="author">Taro Tanaka</p>
-        <p class="posted_date">2023/03/20</p>
-      </div>
-      <div class="article-components">
-        <img src="images/article_thumbnail.png">
-        <h2>Let's master CSS flexboxes!</h2>
-        <p class="description">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
-          to show
-          you a more advanced use of flexboxes.</p>
-        <p class="author">Taro Tanaka</p>
-        <p class="posted_date">2023/03/20</p>
-      </div>
-      <div class="article-components">
-        <img src="images/article_thumbnail.png">
-        <h2>Let's master CSS flexboxes!</h2>
-        <p class="description">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
-          to show
-          you a more advanced use of flexboxes.</p>
-        <p class="author">Taro Tanaka</p>
-        <p class="posted_date">2023/03/20</p>
+        <section class="category">
+          <h2 class="category__title">Latest Articles</h2>
+          <ul class="category__body card-list">
+            <li class="card-list__item">
+              <a class="card" href="./article.html">
+                <div class="card__image">
+                  <img src="images/article_thumbnail.png">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Let's master CSS flexboxes!</h3>
+                  <p class="card__text">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
+                    to show you a more advanced use of flexboxes.</p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">Taro Tanaka</span>
+                    <span class="card__meta-item">2023/03/20</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card" href="./article.html">
+                <div class="card__image">
+                  <img src="images/article_thumbnail.png">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Let's master CSS flexboxes!</h3>
+                  <p class="card__text">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
+                    to show you a more advanced use of flexboxes.</p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">Taro Tanaka</span>
+                    <span class="card__meta-item">2023/03/20</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card" href="./article.html">
+                <div class="card__image">
+                  <img src="images/article_thumbnail.png">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Let's master CSS flexboxes!</h3>
+                  <p class="card__text">Hello, this is Tanaka from Progate My name is Tanaka from Path. This time, I would like
+                    to show you a more advanced use of flexboxes.</p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">Taro Tanaka</span>
+                    <span class="card__meta-item">2023/03/20</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   </main>
 
   <footer>
-    <div class="footer-wrapper">
-      <div class="copyright">© 2023 Sample, Inc.</div>
-      <div class="footer-links">
-        <a href="#">Site Policy</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Site Map</a>
-      </div>
-    </div>
+    <ul class="site-nav">
+      <li class="site-nav__item"><a href="#">Site Policy</a></li>
+      <li class="site-nav__item"><a href="#">Privacy Policy</a></li>
+      <li class="site-nav__item"><a href="#">Site Map</a></li>
+    </ul>
+    <div class="copyright">© 2023 Sample, Inc.</div>
   </footer>
 </body>
 
