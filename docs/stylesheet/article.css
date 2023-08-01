@@ -26,6 +26,17 @@
     margin-top: 5px;
 }
 
+@media screen and (min-width: 768px) {
+    .article__info {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .article__info-item:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
 /* 記事内容 */
 .article__body {
     margin-top: 20px;
