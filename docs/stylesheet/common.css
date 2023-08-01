@@ -127,3 +127,23 @@ footer {
   border-bottom: 1px solid gray;
   padding: 20px 0;
 }
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .site-nav {
+    display: flex;
+    border-right: 1px solid gray;
+  }
+
+  .site-nav__item a {
+    padding: 0 20px;
+    border-bottom: 0;
+    border-left: 1px solid gray;
+  }
+}
